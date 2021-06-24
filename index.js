@@ -6,11 +6,11 @@ fetch('https://api.mcsrvstat.us/bedrock/2/mc.pipixia.ga').then((res) => {
   const players = document.querySelector('.status-wrapper .values .players');
 
   if (data.online) {
-    status.textContent='online';
+    status.textContent='在线';
     status.style.color = '#3d9c4c';
     players.textContent = data.players.online + '/' + data.players.max;
   } else {
-    status.textContent='offline 😔 message a mod on the ACM Discord!';
+    status.textContent='离线 😔 进入服务器尝试一下吧';
     status.style.color = '#E83D3D';
     players.textContent = '---';
   }
