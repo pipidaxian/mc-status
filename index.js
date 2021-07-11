@@ -1,4 +1,4 @@
-fetch('https://api.mcsrvstat.us/bedrock/2/mcbr.pipixia.ga').then((res) => {
+fetch('https://api.mcsrvstat.us/bedrock/2/mc.pipixia.ga').then((res) => {
   return res.json();
 }).then((data) => {
   console.log(data)
