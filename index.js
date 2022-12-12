@@ -1,4 +1,4 @@
-fetch('https://api.mcsrvstat.us/bedrock/2/mc.pipixia.ga').then((res) => {
+fetch('https://api.mcsrvstat.us/2/mc.pipixia.ga').then((res) => {
   return res.json();
 }).then((data) => {
   console.log(data)
@@ -10,7 +10,7 @@ fetch('https://api.mcsrvstat.us/bedrock/2/mc.pipixia.ga').then((res) => {
     status.style.color = '#3d9c4c';
     players.textContent = data.players.online + '/' + data.players.max;
   } else {
-    status.textContent='离线，进入服务器尝试一下吧';
+    status.textContent='离线';
     status.style.color = '#E83D3D';
     players.textContent = '---';
   }
